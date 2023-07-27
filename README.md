@@ -1,9 +1,8 @@
-# Piscina de Entropia
-Repositorio oficial de piscinadeentropia.es
+# ramshackel-code.github.io
 
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)[![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)](https://pages.github.com/ "Go to GitHub Pages homepage")[![contributions - welcome](https://img.shields.io/badge/contributions-welcome-blue)](/CONTRIBUTING.md "Go to contributions doc")
 
-[Github.io link](https://isaaker.github.io/piscinadeentropia/)
+[Github.io link](https://ramshackle-code/ramshackel-code.github.io)
 
 # Status
 
@@ -45,7 +44,7 @@ Repositorio oficial de piscinadeentropia.es
 
 This repository and the content it's under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International  
 
-[Read More](https://github.com/Isaaker/piscinadeentropia/blob/main/LICENSE.txt)
+[Read More](https://github.com/ramshackle-code/ramshackel-code.github.io/blob/main/LICENSE.md)
 
 # CONTRIBUTING
-To contribute read [this document](https://github.com/Isaaker/piscinadeentropia/blob/main/CONTRIBUTING.md)
+To contribute read [this document](https://github.com/ramshackle-code/ramshackel-code.github.io/blob/main/CONTRIBUTING.md)
