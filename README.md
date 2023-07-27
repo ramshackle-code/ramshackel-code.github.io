@@ -12,7 +12,6 @@
 
 |Name|Type|Status|
 |--|--|--|
-|MkDocs Deploy|Deploy|[![MkDocs Deploy](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/deploy_gh-pages.yml/badge.svg?branch=main)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/deploy_gh-pages.yml)|
 |Repository Linter|Code|[![Repository Linter](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/repolint.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/repolint.yml)|
 |SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-gitleaks.yml)|
 |SAST Semgrep|Security|[![SAST Semgrep](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-semgrep.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-semgrep.yml)|
