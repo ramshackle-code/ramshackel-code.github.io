@@ -2,9 +2,28 @@
 <html>
 <head>
   <title>Ramshackle Code</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Web Favicon -->
+
+  <!--- .ico Favicon -->
+  <link rel="icon" type="image/ico" href="./images/favicon/favicon.ico">
+
+  <!--- .png Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+
+  <!--  Apple Devices Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  
+  <!-- Android (Chrome) Favicon -->
+  <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+
   <style>
     body {
       background-color: #0A1628;
@@ -34,7 +53,6 @@
 
     .gh-button {
       display: grid;
-      place-items: left;
       background: #e3edf7;
       padding: 1.4em;
       border-radius: 10px;
@@ -72,8 +90,9 @@
     .container {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Cambiar de 'center' a 'flex-start' para alinear a la izquierda */
       height: 100vh;
+      padding-left: 20px; /* Agregar padding para separar el botón del borde izquierdo */
     }
 
     .gh-link {
