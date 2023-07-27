@@ -3,10 +3,5 @@
 
 ## Reporting a Vulnerability
 
-To report a Vulnerability please contact my with one of the metods on Contact Section. GitHub issues because this metods are public, and other developers can see it.
+To report a Vulnerability please contact with organization administrators with the following e-mail: ramshackle-code@piscinadeentropia.es
 
-## Contact
-
-- [E-Mail](mailto:isaaker.hernan@protonmail.com)
-- [Telegram](https://t.me/Isaaker)
-- [Other metods](https://piscinadeentropia.es/contacto)
