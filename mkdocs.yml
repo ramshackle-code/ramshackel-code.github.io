@@ -1,0 +1,163 @@
+site_name: Piscina de Entropia 
+site_url: https://piscinadeentropia.es
+site_description: ¿Has probado a apagarlo y volverlo a encender?
+copyright: Copyright &copy; 2021-2023 Isaac Hernan
+
+theme:
+    name: material
+    language: "es"
+    logo: ./images/pisicina_de_entropia_logo.png
+    favicon: ./images/favicon.ico
+    font:
+        text: Ubuntu 
+        code: IBM Plex Mono 
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.sections
+      - navigation.top
+      - navigation.footer
+    palette:
+      - primary: blue
+      - accent: cyan 
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to system preference
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+
+plugins:
+  - awesome-pages:
+      strict: false
+  - redirects
+  - search
+  - mkdocs-simple-hooks:
+      hooks:
+        on_config: "hooks.on_config:deploy_hooks"
+  - rss:
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d"
+      pretty_print: !ENV [PRETTY_RSS, false]
+      length: 30
+      match_path: "./*"
+
+
+
+nav:
+    - Inicio: index.md
+    - General: 
+        - "Bienvenidos": "general/general_bienvenidos.md"
+        - "Adios Atom, Github archiva el proyecto": "general/general_adios-atom-github-archiva-proyecto.md"
+        - "Amazon Fire Tv Stick": "general/general_amazon-fire-stick.md"
+        - "Anuncios en los SmartTV": "general/general_anuncios-smart-tv.md"
+        - "La diferencia entre un Bit y un Byte": "general/general_diferencias-entre-un-bit-y-un-byte.md"
+        - "Hablemos de navegadores": "general/general_hablemos-de-navegadores.md"
+        - "Los 10 servicios de Google que aun no conocías": "general/general_los-servicios-de-google-que-no-conocias.md"
+        - "Mis malas experiencias con 5 plataformas": "general/general_mis-malas-experiencias-5-plataformas.md"
+        - "Nuestro nuevo canal de YouTube": "general/general_nuestro-nuevo-canal-youtube.md"
+        - "¿Que es Meta?": "general/general_que-es-meta.md"
+        - "Twitter vs Mastodon": "general/general_twitter-vs-mastodon.md"
+    - Apple: 
+        - "Introducción": "apple/apple_intro.md" 
+        - "California Streaming": 
+                - "Introducción": "apple/california-streaming/apple_california-streaming_intro.md"
+                - "iPad 2022": "apple/california-streaming/apple_california-streaming_iPad2022.md"
+                - "Apple TV+": "apple/california-streaming/apple_california-streaming_apple-tv-ot21.md"
+                - "Apple Watch 7": "apple/california-streaming/apple_california-streaming_apple-watch-7.md"
+        - "Unleashed":
+                - "Introducción": "apple/unleashed/apple_unleashed_intro.md"
+        - "WWDC 21":
+                - "Introducción": "apple/wwdc21/apple_wwdc21_intro.md"
+                - "AirPods": "apple/wwdc21/apple_wwdc21_airpods.md"
+                - "Apple Developer": "apple/wwdc21/apple_wwdc21_apple-developer.md"
+                - "Fitness +": "apple/wwdc21/apple_wwdc21_apple-fitness.md"
+                - "HomeKit": "apple/wwdc21/apple_wwdc21_homekit.md"
+                - "iCloud": "apple/wwdc21/apple_wwdc21_iCloud.md"
+                - "iOS 15": "apple/wwdc21/apple_wwdc21_iOS-15.md"
+                - "iPadOS": "apple/wwdc21/apple_wwdc21_iPadOS.md"
+                - "macOS Monterey": "apple/wwdc21/apple_wwdc21_macOS-monterey.md"
+                - "Privacy": "apple/wwdc21/apple_wwdc21_privacy.md"
+                - "Salud": "apple/wwdc21/apple_wwdc21_salud.md"
+                - "Conclusión y Cierre": "apple/wwdc21/apple_wwdc21_conclusion-cierre.md"
+        - "Apple actualización de iOS 14.6": "apple/apple_actualizacion-de-iOS-14-6.md"
+        - "Apple dice adios al iPod": "apple/apple_adios-iPod.md"
+        - "Apple Pencil": "apple/apple_apple-pencil.md"
+        - "Aqara en la Apple Store": "apple/apple_aqara-en-la-apple-store.md"
+        - "Citas de Steve Jobs": "apple/apple_citas-de-steve-jobs.md"
+        - "iOS 14.7": "apple/apple_iOS-14-7.md"
+        - "Las nuevas AirTags": "apple/apple_nuevas-airtags.md"
+        - "Las nuevas AirTags 2": "apple/apple_nuevas-airtags-2.md"
+        - "Vulnerabilida en los nuevos chips de Apple M1": "apple/apple_vulnerabilidad-en-los-nuevos-chips-de-apple-M1"
+
+    - Raspberry:
+        - "Introducción": "raspberry/raspberry_intro.md"
+        - "Pi-Hole": 
+                - "Introducción": "raspberry/pi_hole/raspberry_pihole_intro.md" 
+        - "RetroPie":
+                - "Introducción": "raspberry/retropie/raspberry_retropie_intro.md"
+                - "Instalando RetroPie": "raspberry/retropie/raspberry_retropie_instalando-retropie.md"
+                - "Instalando navegador RetroPie": "raspberry/retropie/raspberry_retropie_instalando-navegador-retropie.md"
+        - "Raspberry Pi 400": "raspberry/raspberry_raspberry-pi-400.md"
+    - Arduino:
+        - "Introducción": "arduino/arduino_intro.md"
+        - "Otto DIY": "arduino/arduino_otto-DIY.md"
+    - Ciberseguridad:
+        - "El cifrado mas seguro del mundo": "ciberseguridad/ciberseguridad_cifrado-mas-seguro-mundo.md"
+        - "FIDO alliance y el futuro de las contraseñas": "ciberseguridad/ciberseguridad_fido-alliance-futuro-contraseñas.md"
+        - "Modo encubierto curioso ajuste de firewall": "ciberseguridad/ciberseguridad_modo-encubierto.md"
+        - "El peligro de cargar el movil en un lugar público": "ciberseguridad/ciberseguridad_peligro-cargar-movil-publico.md"
+        - "Restablecer el codigo  de doble factor de Telegram": "ciberseguridad/ciberseguridad_restablecer-doble-factor-telegram.md"
+    - Git y GitHub:
+        - "¿Qué es Git?": "git-github/git-github_que-es-git.md"
+        - "¿Qué es GitHub?": "git-github/git-github_que-es-github.md"
+    - Lenguajes: 
+        - "Introducción": "lenguajes/lenguajes_intro.md"
+        - "Swift": 
+                - "Introducción": "lenguajes/swift/lenguajes_swift_intro.md"
+        - "Python":
+                - "Introducción": "lenguajes/python/lenguajes_python_intro.md"
+                - "Python Hello World": "lenguajes/python/lenguajes-python_hello-world.md"
+                - "Python if, else, while e input": "lenguajes/python/lenguajes_python_if-else-while-input.md"
+    - Acerca de...:
+        - Acerca de mi y Piscina de Entropia: about/about_acercademi.md
+        - Política de Privacidad: about/about_politica-de-privacidad
+        - Contacto: about/about_contacto.md
+    - Otros:
+        - Logos: others/others_logos.md
+        - Primer Aniversario: others/others_primeraniversario.md
+        - Paginas amigas: others/others_paginasamigas.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://mas.to/@piscina_de_entropia 
+    - icon: fontawesome/brands/github
+      link: http://github.com/Isaaker 
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/piscinadeentropia_oficial/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/piscinaentropia
