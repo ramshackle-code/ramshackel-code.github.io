@@ -6,17 +6,6 @@
 
 # Status
 
-## Workflows
-
-**Workflows status:**
-
-|Name|Type|Status|
-|--|--|--|
-|Repository Linter|Code|[![Repository Linter](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/repolint.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/repolint.yml)|
-|SAST GitLeaks|Security|[![SAST GitLeaks](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-gitleaks.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-gitleaks.yml)|
-|SAST Semgrep|Security|[![SAST Semgrep](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-semgrep.yml/badge.svg)](https://github.com/ramshackle-code/ramshackle-code.github.io/actions/workflows/sast-semgrep.yml)|
-|Depenabot|Security|![](https://badgen.net/github/dependabot/ramshackle-code/ramshackle-code.github.io)|
-
 ## Repo
 
 |Name|Status|
