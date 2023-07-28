@@ -41,7 +41,6 @@
       padding: 20px;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
 
 
@@ -55,6 +54,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .header_items_1{
+        align-items: center;
+    }
+
+    .header_items_2{
+        align-items: left;
     }
 
     .gh-button {
@@ -131,8 +138,16 @@
 <body>
   <!-- Encabezado -->
   <header>
-    <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
-    <h1>Ramshackle Code</h1>
+    <div class="header_items_1">
+        <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
+        <h1>Ramshackle Code</h1>
+    </div>
+    <div class="header_items_2">
+        <a href="./index.html">
+            <button class="btn-1">About</button>
+        </a>
+    </div>
+    </div>
   </header>
 
   <!-- Contenido principal -->
