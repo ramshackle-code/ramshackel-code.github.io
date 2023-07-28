@@ -28,7 +28,7 @@
     body {
       background-color: #0A1628;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       margin: 0;
       padding: 0;
       display: flex;
@@ -48,7 +48,7 @@
     footer {
       background-color: #17345f;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       border-top: 1px solid #204a8a;
       padding: 20px;
       margin-top: auto;
@@ -59,7 +59,7 @@
 
     .gh-button {
       background: #e3edf7;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       padding: 10px 20px;
       border-radius: 10px;
       cursor: pointer;
@@ -86,7 +86,7 @@
       width: 50px;
       height: auto;
       border: 5px solid #17345f;
-      border-radius: 50%;
+      border-radius: 30%;
       margin-right: 10px;
     }
 
@@ -100,35 +100,80 @@
       color: #fff;
     }
 
-    .btn-1 {
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: rgb(14, 14, 26);
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.6s;
-        box-shadow: 0px 0px 60px #1f4c65;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    .home-button {
+        color: white; 
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #17345f; 
+        border: 1px solid #17345f; 
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #2c89b8, -6px -6px 12px #108ae0; 
     }
 
-    .btn-1:active {
-        scale: 0.92;
-    }
-
-    .btn-1:hover {
-        background: rgb(2,29,78);
-        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-        color: rgb(4, 4, 38);
+    .home-button:active {
+        color: white; 
+        box-shadow: inset 4px 4px 12px #2c89b8, inset -4px -4px 12px #2c89b8; 
     }
 
     .head-link {
       color:white;
     }
+
+    .contact-button {
+        font-family: inherit;
+        font-size: 20px;
+        background: royalblue;
+        color: white;
+        padding: 0.7em 1em;
+        padding-left: 0.9em;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+
+    .contact-button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .contact-button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+
+    .contact-button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    }
+
+    .contact-button:hover span {
+    transform: translateX(5em);
+    }
+
+    .contact-button:active {
+    transform: scale(0.95);
+    }
+
+    @keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+    }
+
+
 
   </style>
 </head>
@@ -146,11 +191,60 @@
   <main>
     <center>
       <h1>About</h1>
-      <a href="./">
-        <button class="btn-1">Home</button>
-      </a>
-      <br>
+      <h2>Short introduction</h2>
     </center>
+    <p>
+        In this organization you will find a little bit of everything, code that is worthwhile and a lot of code that will be half finished, hence the name, ramshackle code.
+
+        The logo, a claw from the arcade machines comes because we all, sooner or later, have had a boss that when a problem came into his mail, he would raise his head to see who he would assign it to... it reminded us of the Toy Story movie and the hook scene, we the little green dolls at the bottom of the machine and our boss up there handling the claw to see who he would choose.
+
+        <img src="https://github.com/ramshackle-code/.github/assets/49678134/0e996273-0acb-43b0-8315-df24b02af7c7", alt="The hook">
+    </p>
+
+    <center>
+        <h2>Our values</h2>
+    </center>
+
+    <p>
+        As stated in our <a href="./code_of_conduct.html">code of conduct</a>, our values are as follows:
+        <cite>
+            At Ramshackle Code, we value diversity, respect, empathy, and inclusion. We believe that every individual has something valuable to contribute, and by working together, we can achieve amazing results. We encourage all members to respect diverse opinions and experiences and seek mutual understanding in all situations.
+        </cite>
+
+        Our code of conduct also states:
+
+        <cite>
+            As a valued member of the Ramshackle Code community, we expect you to maintain the highest level of integrity and ethical conduct. Specifically, we strictly prohibit any involvement in activities that may constitute intellectual property crime, computer fraud, or data theft. These actions not only undermine the trust within our community but also go against the principles of fairness and honesty that we uphold.
+            We emphasize the importance of adhering to legal and ethical standards in all aspects of your participation in our community. Any member found engaging in any form of intellectual property crime, computer fraud, or data theft will be subject to appropriate disciplinary measures, which may include expulsion from the community.
+        </cite>
+    </p>
+
+    <center>
+        <h2>Contact</h2>
+        <a href="mailto:ramshackle-code@piscinadeentropia.es">
+            <button class="contact-button">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Contact</span>
+            </button>
+        </a>
+    </center>
+
+
+
+    <br>
+    <center>
+      <a href="./">
+        <button class="home-button">Home</button>
+      </a>
+    </center>
+      <br>
   </main>
 
   <!-- Footer -->
