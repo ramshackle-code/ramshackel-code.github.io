@@ -124,6 +124,13 @@
         background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
         color: rgb(4, 4, 38);
     }
+
+    .buttons-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   </style>
 </head>
 <body>
@@ -137,21 +144,22 @@
   <main>
     <center>
       <h1>Home</h1>
-      <br>
-      <a href="./about.html">
-        <button class="btn-1">About</button>
-      </a>
-      <a href="./contact.html">
-        <button class="btn-1">Contact</button>
-      </a>
-      <a href="./blogs.html">
-        <button class="btn-1">About</button>
-      </a>
-      <a href="./code_of_conduct.html">
-        <button class="btn-1">Code Of Conduct</button>
-      </a>
-      <br>
+      <div class="buttons-container">
+        <a href="./about.html">
+          <button class="btn-1">About</button>
+        </a>
+        <a href="./contact.html">
+          <button class="btn-1">Contact</button>
+        </a>
+        <a href="./blogs.html">
+          <button class="btn-1">About</button>
+        </a>
+        <a href="./code_of_conduct.html">
+          <button class="btn-1">Code Of Conduct</button>
+        </a>
+      </div>
     </center>
+    <br>
   </main>
 
   <!-- Footer -->
