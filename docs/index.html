@@ -25,6 +25,8 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
 
   <style>
+
+    <!--- Web styles --->
     body {
       background-color: #0A1628;
       color: white;
@@ -56,6 +58,21 @@
       align-items: center;
     }
 
+    <!--- Head styles --->
+
+    .logo {
+      width: 50px;
+      height: auto;
+      border: 5px solid #17345f;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    <!--- Main styles --->
+
+
+    <!--- Footer styles --->
+
     .gh-button {
       background: #e3edf7;
       font-family: 'Ubuntu', sans-serif;
@@ -81,15 +98,7 @@
       transform: scale(0.9);
     }
 
-    .logo {
-      width: 50px;
-      height: auto;
-      border: 5px solid #17345f;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-
-    .container {
+    .gh-container {
       display: flex;
       align-items: center;
     }
@@ -103,7 +112,9 @@
 <body>
   <!-- Encabezado -->
   <header>
-    <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
+    <a href="https://ramshackle-code.github.io>
+        <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
+    </a>
     <h1>Ramshackle Code</h1>
   </header>
 
@@ -117,7 +128,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="gh-container">
       <a href="https://github.com/ramshackle-code" class="gh-link">
         <div class="gh-button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
