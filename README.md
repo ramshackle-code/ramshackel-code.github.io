@@ -2,7 +2,7 @@
 
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)![Hosted with GH Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white)
 
-[Github.io link](https://ramshackle-code/ramshackel-code.github.io)
+[Github.io link](ramshackel-code.github.io)
 
 # Status
 
