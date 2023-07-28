@@ -99,31 +99,20 @@
       text-decoration: none;
       color: #fff;
     }
-
-    .btn-1 {
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: rgb(14, 14, 26);
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.6s;
-        box-shadow: 0px 0px 60px #1f4c65;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    .home-button {
+        color: #080312; 
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #1f4c65; 
+        border: 1px solid #1f4c65; 
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #133241, -6px -6px 12px #27577a; 
     }
 
-    .btn-1:active {
-        scale: 0.92;
-    }
-
-    .btn-1:hover {
-        background: rgb(2,29,78);
-        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-        color: rgb(4, 4, 38);
+    .home-button:active {
+        color: #666666; 
+        box-shadow: inset 4px 4px 12px #133241, inset -4px -4px 12px #27577a; 
     }
 
     .div-conduct {
@@ -135,13 +124,18 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       align-items: center;
     }
+
+    .head-link {
+      color:white;
+    }
+
   </style>
 </head>
 <body>
   <!-- Encabezado -->
   <header>
     <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
-    <a href="https://ramshackle-code.github.io">
+    <a class="head-link" href="https://ramshackle-code.github.io">
         <h1>Ramshackle Code</h1>
     </a>
     </div>
@@ -292,14 +286,10 @@
       </div>
       <br>
       <a href="./">
-        <button class="btn-1">Home</button>
+        <button class="home-button"> Home</button>
       </a>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      
   </main>
 
   <!-- Footer -->
