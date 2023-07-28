@@ -28,7 +28,7 @@
     body {
       background-color: #0A1628;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       margin: 0;
       padding: 0;
       display: flex;
@@ -44,10 +44,11 @@
       align-items: center;
     }
 
+
     footer {
       background-color: #17345f;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       border-top: 1px solid #204a8a;
       padding: 20px;
       margin-top: auto;
@@ -58,7 +59,7 @@
 
     .gh-button {
       background: #e3edf7;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       padding: 10px 20px;
       border-radius: 10px;
       cursor: pointer;
@@ -99,42 +100,27 @@
       color: #fff;
     }
 
-    .btn-1 {
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: rgb(14, 14, 26);
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.6s;
-        box-shadow: 0px 0px 60px #1f4c65;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    .home-button {
+        color: white; 
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #17345f; 
+        border: 1px solid #17345f; 
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #2c89b8, -6px -6px 12px #108ae0; 
     }
 
-    .btn-1:active {
-        scale: 0.92;
-    }
-
-    .btn-1:hover {
-        background: rgb(2,29,78);
-        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-        color: rgb(4, 4, 38);
-    }
-
-    .buttons-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    .home-button:active {
+        color: white; 
+        box-shadow: inset 4px 4px 12px #2c89b8, inset -4px -4px 12px #2c89b8; 
     }
 
     .head-link {
       color:white;
     }
+
+
   </style>
 </head>
 <body>
@@ -142,31 +128,35 @@
   <header>
     <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
     <a class="head-link" href="https://ramshackle-code.github.io">
-      <h1>Ramshackle Code</h1>
+        <h1>Ramshackle Code</h1>
     </a>
+    </div>
   </header>
 
   <!-- Contenido principal -->
   <main>
     <center>
-      <h1>Home</h1>
-      <br>
-      <h3><p>Welcome to Ramshackle Code Organization Web Page</p></h3>
-      <br>
-      <div class="buttons-container">
-        <a href="./about.html">
-          <button class="btn-1">About</button>
+        <h1>Blogs</h1>
+        <br>
+        In this web page you can find the blogs of some members of the organization, if you are a member and you want yours to appear <a href="mailto:ramshackle-code@piscinadeentropia.es">contact the administrators of the organization</a>
+        <br>
+    </center>
+
+    <h3>Pisicina de Entropia</h3>
+    <img="https://piscinadeentropia.es/images/pisicina_de_entropia_logo.png" alt="Piscina de Entropia">
+    <a href="https://piscinadeentropia.es">Go to the website</a>
+
+    <hr>
+
+    <h3>Prueba de Concepto</h3>
+    <img="https://piscinadeentropia.es/images/poc_logo.png" alt="Piscina de Entropia">
+    <a href="https://pruebadeconcepto.es">Go to the website</a>
+
+    <hr>
+    <center>
+        <a href="./">
+          <button class="home-button">Home</button>
         </a>
-        <a href="./members.html">
-          <button class="btn-1">Members</button>
-        </a>
-        <a href="./blogs.html">
-          <button class="btn-1">Blogs</button>
-        </a>
-        <a href="./code_of_conduct.html">
-          <button class="btn-1">Code Of Conduct</button>
-        </a>
-      </div>
     </center>
     <br>
   </main>
@@ -180,19 +170,6 @@
             <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/>
           </svg>
         </div>
-      </a>
-      <a href="mailto:ramshackle-code@piscinadeentropia.es">
-        <button class="contact-button">
-            <div class="svg-wrapper-1">
-              <div class="svg-wrapper">
-                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
-                </svg>
-              </div>
-            </div>
-            <span>Contact</span>
-        </button>
       </a>
     </div>
     <center>

@@ -28,7 +28,7 @@
     body {
       background-color: #0A1628;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       margin: 0;
       padding: 0;
       display: flex;
@@ -44,10 +44,11 @@
       align-items: center;
     }
 
+
     footer {
       background-color: #17345f;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       border-top: 1px solid #204a8a;
       padding: 20px;
       margin-top: auto;
@@ -58,7 +59,7 @@
 
     .gh-button {
       background: #e3edf7;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', Arial;
       padding: 10px 20px;
       border-radius: 10px;
       cursor: pointer;
@@ -99,42 +100,81 @@
       color: #fff;
     }
 
-    .btn-1 {
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        background-color: rgb(14, 14, 26);
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.6s;
-        box-shadow: 0px 0px 60px #1f4c65;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    .home-button {
+        color: white; 
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #17345f; 
+        border: 1px solid #17345f; 
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #2c89b8, -6px -6px 12px #108ae0; 
     }
 
-    .btn-1:active {
-        scale: 0.92;
-    }
-
-    .btn-1:hover {
-        background: rgb(2,29,78);
-        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-        color: rgb(4, 4, 38);
-    }
-
-    .buttons-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    .home-button:active {
+        color: white; 
+        box-shadow: inset 4px 4px 12px #2c89b8, inset -4px -4px 12px #2c89b8; 
     }
 
     .head-link {
       color:white;
     }
+
+    .contact-button {
+        font-family: inherit;
+        font-size: 20px;
+        background: royalblue;
+        color: white;
+        padding: 0.7em 1em;
+        padding-left: 0.9em;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+
+    .contact-button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .contact-button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+
+    .contact-button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    }
+
+    .contact-button:hover span {
+    transform: translateX(5em);
+    }
+
+    .contact-button:active {
+    transform: scale(0.95);
+    }
+
+    @keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -142,31 +182,25 @@
   <header>
     <img src="./images/ramshackle-logo.png" alt="Ramshackle Code Logo" class="logo">
     <a class="head-link" href="https://ramshackle-code.github.io">
-      <h1>Ramshackle Code</h1>
+        <h1>Ramshackle Code</h1>
     </a>
+    </div>
   </header>
 
   <!-- Contenido principal -->
   <main>
     <center>
-      <h1>Home</h1>
-      <br>
-      <h3><p>Welcome to Ramshackle Code Organization Web Page</p></h3>
-      <br>
-      <div class="buttons-container">
-        <a href="./about.html">
-          <button class="btn-1">About</button>
+        <h1>Members</h1>
+        <br>
+        On this page you can find information about membership and how to become one, most of the information on this page comes from the <a href="https://github.com/ramshackle-code/.github/blob/main/MEMBERS.md">members archive on GitHub.</a>
+        <br>
+    </center>
+
+    
+    <center>
+        <a href="./">
+          <button class="home-button">Home</button>
         </a>
-        <a href="./members.html">
-          <button class="btn-1">Members</button>
-        </a>
-        <a href="./blogs.html">
-          <button class="btn-1">Blogs</button>
-        </a>
-        <a href="./code_of_conduct.html">
-          <button class="btn-1">Code Of Conduct</button>
-        </a>
-      </div>
     </center>
     <br>
   </main>
